@@ -1,0 +1,271 @@
+@charset "UTF-8";
+body{
+	background-color: #ABCDCF;
+	margin: 5%;
+	margin-right: 0;
+			margin-bottom: 0;
+}
+
+.contenedor{
+	display: flex;
+	flex-wrap: wrap;
+}
+a:link{
+	color:#abcdcf;
+	text-decoration: none;
+	font-weight: bolder;
+}
+a:active{
+	color: #d4beaf;
+	text-decoration: none;
+	font-weight: bolder;
+}
+a:hover{
+	color: #d4beaf;
+	font-weight: bolder;
+	text-decoration: none;
+}
+a:visited{
+	color: #d4beaf;
+	text-decoration: none;
+	font-weight: bolder;
+}
+header{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+header nav{
+	width: 750px;
+	height: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #03383b;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+header nav a{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	color: #abcdcf;
+	font-family: source-sans-pro;
+	font-style: normal;
+	font-weight: 400;
+	flex-grow: 1;
+	font-size: 100%;
+}
+	nav a{
+	margin-left: 15px;
+	}
+header .logo_Sara{
+	width: 200px;
+	height: auto;
+}
+header .logo_insta{
+	width: 20px;
+	height: auto;
+}
+h1{
+	color: #2a170f;
+	font-family: 'Source Serif Pro', serif;
+	font-weight: bold;	
+	font-size: 250%;
+}
+.contenedor_flexible, .contenedor_flexible_2, .contenedor_flexible_3{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	font-family: "source-sans-pro";
+	font-size: 130%;
+}
+.contenedor_flexible >div, .contenedor_flexible_2>div, .contenedor_flexible_3>div{
+	width: 300px;
+	height: 300px;
+	flex-direction: row;
+	margin:5px;
+}
+.contenedor_flexible_2{
+	flex-direction: row-reverse;
+}
+.img_cuadrado{
+	width: 100%;
+	height: auto;
+}
+.contenedor_flexible>div{
+	display: flex;
+	background-color: #00373a;
+	justify-content: center;
+	align-items: center;
+	color: #abcdcf;
+}
+.contenedor_flexible_2>div{
+	display: flex;
+	background-color: #2a170f;
+	justify-content: center;
+	align-items: center;
+	color: #d0baab;
+}
+.contenedor_flexible_3>div{
+	display: flex;
+	background-color: #00373a;
+	justify-content: center;
+	align-items: center;
+	color: #abcdcf;
+}
+footer{
+	width:100%;
+	height:150px;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: "source-sans-pro";
+	font-weight: 200;
+	font-size: 60%;
+	color: #2a170f;
+}
+.insta_cafe_footer{
+	width: 20px;
+	height: auto;
+}
+.contenedor_flexible_5{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.contenedor_flexible_5>div{
+	margin: 20px;
+	
+}
+
+.contenedor_flexible_4{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: flex-start;
+	align-items: center;
+}
+.contenedor_flexible_4>div{
+	width: 430px;
+	height: auto;
+	font-family: source-sans-pro;
+	font-style: normal;
+	color:#2A170F;
+	font-weight: 400;
+	font-size: 130%;
+}
+h4{
+	font-family: 'Source Serif Pro', serif;	
+	color: #00373A;
+	font-size: 300%;
+	margin-bottom: 10px;
+	margin-top: 0;
+	text-align: center;
+}
+.img_sara_sobremi{
+	width:90%;
+	height: auto;
+margin-left: auto;
+	margin-right: auto;
+}
+section{
+	margin: 20px;
+}
+.contenedor_flexible_6{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	font-family: source-sans-pro;
+	font-style: normal;
+	color:#2A170F;
+	font-size: 120%;	
+}
+.contenedor_flexible_6>div{
+		margin: 20px;
+}
+.video{
+		margin-left: auto;
+		margin-right: auto;
+}
+
+@media screen and (max-width : 1125px ){
+	body{
+	margin:0;
+	margin-top: 60px;
+	}
+	header{
+	justify-content: center;
+	margin-left: 0;
+	}
+	header nav{
+		width:100%;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	}
+	.logo_Sara{
+	margin-bottom: 50px;
+	}
+	section{
+		flex-direction: column;
+	}
+	footer{
+		font-size: 50%;
+	}
+	section>div{
+		text-align: center;
+	}
+	nav a{
+	margin-left: 5%;
+	margin-right: 5%;
+	}
+	h1{
+	text-align: center;
+	}
+	
+	.contenedor_flexible_4>div{
+		font-size: 100%;
+		width: 90%;
+		height: auto;
+		margin-left: 5%;
+	}
+	.contenedor_flexible_4{
+		flex-direction: column-reverse;
+	}
+	.img_sara_sobremi{
+	width:70%;
+	height: auto;
+}
+	.contenedor_flexible_6{
+		width:90%;
+		font-size: 100%;
+	}
+.video_eye {
+	width: 90%;
+	height: auto;
+}
+	.video{
+		width: 100%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width : 675px ){
+		.contenedor_flexible >div, .contenedor_flexible_2>div, .contenedor_flexible_3>div{
+	width: 300px;
+	height: auto;
+}
+}

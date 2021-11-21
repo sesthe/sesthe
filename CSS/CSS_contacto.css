@@ -1,0 +1,213 @@
+@charset "UTF-8";
+body{
+	background-color: #ABCDCF;
+	margin: 5%;
+	margin-right: 0;
+		margin-bottom: 0;
+}
+
+.contenedor{
+	display: flex;
+	flex-wrap: wrap;
+}
+a:link{
+	color:#abcdcf;
+	text-decoration: none;
+	font-weight: bolder;
+}
+a:active{
+	color: #d4beaf;
+	text-decoration: none;
+	font-weight: bolder;
+}
+a:hover{
+	color: #d4beaf;
+	font-weight: bolder;
+	text-decoration: none;
+}
+a:visited{
+	color: #d4beaf;
+	text-decoration: none;
+	font-weight: bolder;
+}
+header{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+header nav{
+	width: 750px;
+	height: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #03383b;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+header nav a{
+	justify-content: space-around;
+	color: #abcdcf;
+	font-family: source-sans-pro;
+	font-style: normal;
+	font-weight: 400;
+	flex-grow: 1;
+	font-size: 100%;
+}
+	nav a{
+	margin-left: 15px;
+	}
+header .logo_Sara{
+	width: 200px;
+	height: auto;
+}
+header .logo_insta{
+	width: 20px;
+	height: auto;
+}
+footer{
+	margin-top: 10%;
+	width:100%;
+	height:150px;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: "source-sans-pro";
+	font-weight: 200;
+	font-size: 60%;
+	color: #2a170f;
+}
+.insta_cafe_footer{
+	width: 20px;
+	height: auto;
+}
+h1{
+	color: #2a170f;
+	font-family: 'Source Serif Pro', serif;
+	font-weight: bold;	
+	font-size: 250%;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+.contenedor_flexible{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	font-family:"source-sans-pro";
+	color:#2A170F;
+	font-size: 100%;
+	align-items: center;
+	justify-content: center;
+}
+.contenedor_flexible>div{
+	width:100px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+section{
+	display: flex;
+	flex-wrap: wrap;
+	width:100%;
+	justify-content: center;
+	margin: 20px;
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+font-family: "source-sans-pro";/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #ABCDCF;
+  color:#2A170F;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+font-family: "source-sans-pro";
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #D0BAAB;
+font-family: "source-sans-pro";
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #00373A;
+  padding: 20px;
+font-family: "source-sans-pro";
+	color:#ABCDCF;
+	width: 60%;
+display: flex;
+	flex-wrap: wrap;
+justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+@media screen and (max-width : 1080px ){
+	body{
+	margin:0;
+	margin-top: 60px;
+	}
+	header{
+	justify-content: center;
+	margin-left: 0;
+	}
+	header nav{
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	width:100%;
+	}
+	.logo_Sara{
+	margin-bottom: 50px;
+	}
+	section{
+		flex-direction: column;
+	}
+	footer{
+		font-size: 50%;
+	}
+	nav a{
+	margin-left: 5%;
+	margin-right: 5%;
+	}
+	h1{
+	text-align: center;
+	}
+	section{
+		width:100%;
+		justify-content: center;
+		flex-direction: column;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.contenedor_flexible{
+		flex-direction: column;
+		text-align: center;
+	}
+	.container{
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+	}
+
+	}

@@ -1,0 +1,291 @@
+@charset "UTF-8";
+body{
+	background-color: #ABCDCF;
+	margin: 5%;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+body header nav{
+		margin-right: 0;
+}
+
+.contenedor{
+	display: flex;
+	flex-wrap: wrap;
+}
+a:link{
+	color:#abcdcf;
+	text-decoration: none;
+	font-weight: bolder;
+}
+a:active{
+	color: #d4beaf;
+	text-decoration: none;
+	font-weight: bolder;
+}
+a:hover{
+	color: #d4beaf;
+	font-weight: bolder;
+	text-decoration: none;
+}
+a:visited{
+	color: #d4beaf;
+	text-decoration: none;
+	font-weight: bolder;
+}
+header{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+header nav{
+	width: 750px;
+	height: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: #03383b;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+header nav a{
+	justify-content: space-around;
+	color: #abcdcf;
+	font-family: source-sans-pro;
+	font-style: normal;
+	font-weight: 400;
+	flex-grow: 1;
+	font-size: 100%;
+}
+	nav a{
+	margin-left: 15px;
+	}
+header .logo_Sara{
+	width: 200px;
+	height: auto;
+}
+header .logo_insta{
+	width: 20px;
+	height: auto;
+}
+main{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.cuerpo_texto{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 5%;
+	width:100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.cuerpo_texto >div{
+	width:80%;
+	height:auto;
+	color: #2a170f;
+	font-family: "source-sans-pro";
+	text-align: center;
+}
+
+.texto_index{
+	font-family: "source-sans-pro";
+	font-size:170%;
+}
+h1{
+	color: #2a170f;
+	font-family: 'Source Serif Pro', serif;
+	font-weight: bold;	
+	font-size: 300%;
+}
+.boton {
+	border: none;
+	background-color: #2a170f;
+	padding: 7px 35px;
+	font-size: 150%;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 10px;
+	font-family: "source-sans-pro";
+	font-weight: 200;
+	color:#D0BAAB;
+	margin-top:30px;
+}
+
+.boton:hover {background: #03383b;}
+
+footer{
+	margin-top: 10%;
+	width:100%;
+	height:150px;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: "source-sans-pro";
+	font-weight: 200;
+	font-size: 60%;
+	color: #2a170f;
+}
+.insta_cafe_footer{
+	width: 20px;
+	height: auto;
+}
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #D0BAAB;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+font-family: "source-sans-pro";
+	background-color: #00373A;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #2A170F;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+font-family: "source-sans-pro";
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.galeria-img{
+	margin-top: 5%;
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+		
+@media screen and (max-width : 1080px ){
+	body{
+	margin:0;
+	margin-top: 60px;
+	}
+	header{
+	justify-content: center;
+	margin-left: 0;
+	}
+	header nav{
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	}
+	.logo_Sara{
+	margin-bottom: 50px;
+	}
+	section{
+		flex-direction: column;
+	}
+	footer{
+		font-size: 50%;
+	}
+	section>div{
+		text-align: center;
+		margin-left: 20px;
+	}
+	nav a{
+	margin-left: 15px;
+	}
+
+	header nav{
+		width:100%;
+	}
+		.texto_index{
+	font-size: 150%;
+	}
+	.logo_insta{
+		display: none;
+	}
+}
