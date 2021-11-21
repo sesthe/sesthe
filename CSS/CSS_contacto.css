@@ -103,7 +103,7 @@ h1{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	font-family:"source-sans-pro";
+	font-family:sourcesanspro;
 	color:#2A170F;
 	font-size: 100%;
 	align-items: center;
@@ -131,7 +131,7 @@ input[type=text], select, textarea {
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical;
-font-family: "source-sans-pro";/* Allow the user to vertically resize the textarea (not horizontally) */
+font-family: sourcesanspro;/* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
@@ -142,13 +142,13 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-font-family: "source-sans-pro";
+font-family: sourcesanspro;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: #D0BAAB;
-font-family: "source-sans-pro";
+font-family: sourcesanspro;
 }
 
 /* Add a background color and some padding around the form */
@@ -156,7 +156,7 @@ font-family: "source-sans-pro";
   border-radius: 5px;
   background-color: #00373A;
   padding: 20px;
-font-family: "source-sans-pro";
+font-family: sourcesanspro;
 	color:#ABCDCF;
 	width: 60%;
 display: flex;
