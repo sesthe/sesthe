@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Índex</title>
+<link href="CSS/CSS_style_sitiopersonal.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2,n3,n4:default.js" type="text/javascript"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+	
+</head>
+
+<body>
+	<div class="contenedor">
+	<header>
+	<div>
+	<a href="index.html"><img src="media sitio web/logo sara herrmann.png" width="1555" height="604" alt="logo Sara Herrmann" class="logo_Sara"/></a>
+	</div>
+
+	<nav>
+	<a href="index.html">INICIO</a>
+	<a href="html/portafolio.html">PORTAFOLIO</a>
+	<a href="html/sobre_mi.html">SOBRE MÍ</a>
+	<a href="html/contacto.html">CONTACTO</a>
+	<a href="https://www.instagram.com/saaahes/" target="_blank"><img src="media sitio web/png_logo_instagram.png" width="64" height="64" alt="logo de Instagram" class="logo_insta"/></a>
+	</nav>
+	</header>
+	
+	<div class="galeria-img">
+		<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="media sitio web/fotos/Veracruz/IMG_2762-min.jpg" style="width:100%">
+  <div class="text">Montaña</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="media sitio web/fotos/CDMX/Photo17_13-min.jpg" style="width:100%">
+  <div class="text">Barrio Chino</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="media sitio web/fotos/centro de puebla/IMG_3518-min.jpg" style="width:100%">
+  <div class="text">La Catedral de Puebla</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="media sitio web/fotos/centro de puebla/IMG_3518-min.jpg" style="width:100%">
+  <div class="text">La Catedral de Puebla</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+		
+	</div>
+	<main>
+	<div class="cuerpo_texto">
+	<div><h1>Diseñadora gráfica</h1></div>
+	<div class="texto_index">Mis áreas de interés son la fotografía y la ilustración.</div>
+	<div><a href="html/portafolio.html" class="boton">Ver portafolio</a></div>
+	</div>
+	</main>
+	
+	<footer>
+	<a href= "https://www.instagram.com/saaahes/" target="_blank"><img class="insta_cafe_footer" src="media sitio web/insta_cafe.png" width="64" height="64" alt="logo de Instagram"/></a>
+<h2>2020 © Sara Herrmann. Todos los derechos reservados, MX.</h2>
+	</footer>
+	</div>
+</body>
+</html>
