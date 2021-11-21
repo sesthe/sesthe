@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face{
+	font-family: sourcesanspro;
+	src:url("SourceSansPro-Regular.ttf")
+}
 body{
 	background-color: #ABCDCF;
 	margin: 5%;
@@ -54,7 +58,7 @@ header nav a{
 	flex-wrap: wrap;
 	justify-content: space-around;
 	color: #abcdcf;
-	font-family: source-sans-pro;
+	font-family: sourcesanspro;
 	font-style: normal;
 	font-weight: 400;
 	flex-grow: 1;
@@ -82,7 +86,7 @@ h1{
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	font-family: "source-sans-pro";
+	font-family: sourcesanspro;
 	font-size: 130%;
 }
 .contenedor_flexible >div, .contenedor_flexible_2>div, .contenedor_flexible_3>div{
@@ -127,7 +131,7 @@ footer{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	font-family: "source-sans-pro";
+	font-family: sourcesanspro;
 	font-weight: 200;
 	font-size: 60%;
 	color: #2a170f;
@@ -157,7 +161,7 @@ footer{
 .contenedor_flexible_4>div{
 	width: 430px;
 	height: auto;
-	font-family: source-sans-pro;
+	font-family: sourcesanspro;
 	font-style: normal;
 	color:#2A170F;
 	font-weight: 400;
@@ -187,7 +191,7 @@ section{
 	justify-content: center;
 	align-content: center;
 	align-items: center;
-	font-family: source-sans-pro;
+	font-family: sourcesanspro;
 	font-style: normal;
 	color:#2A170F;
 	font-size: 120%;	
@@ -235,7 +239,7 @@ section{
 	}
 	
 	.contenedor_flexible_4>div{
-		font-size: 100%;
+		font-size: 150%;
 		width: 90%;
 		height: auto;
 		margin-left: 5%;
@@ -251,12 +255,11 @@ section{
 		width:90%;
 		font-size: 100%;
 	}
-.video_eye {
-	width: 90%;
-	height: auto;
-}
+	.contenedor_flexible_6>div{
+		font-size: 150%;
+	}
 	.video{
-		width: 100%;
+		width: 150%;
 		height: auto;
 		margin-left: auto;
 		margin-right: auto;
